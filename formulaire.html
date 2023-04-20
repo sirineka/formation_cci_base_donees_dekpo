@@ -8,14 +8,21 @@
     <style>
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: linear-gradient(white, rgb(161, 147, 124));
       }
       label,
       input,
-      textarea {
+      textarea,
+      select {
         display: block;
         margin: 5px;
-        width: 90%;
-        box-sizing: content-box;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 10px;
+      }
+      input:invalid,
+      select:invalid {
+        border: 2px rgb(243, 84, 84) solid;
       }
     </style>
   </head>
@@ -73,7 +80,7 @@
       </label>
       <!--<div id="resultat"></div>-->
       <label for="ville">
-        ville:&nbsp;
+        Ville:
         <!--<input
           placeholder="votre ville"
           type="text"
